@@ -1,0 +1,239 @@
+/* Resetting basic styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Cinzel', serif;
+}
+
+body {
+    font-family: 'Segoe UI', sans-serif;
+    margin: 0;
+    background-color: #FAF5E4; /* Beige background */
+}
+
+main {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+header {
+    background-color: #C7B787;
+    padding: 1rem 2rem;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    width: 100%;
+}
+
+.logo {
+    font-weight: bold;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+.logo img {
+    width: 50px;
+    height: 30px;
+}
+.logo p{
+    font-size: 14px;
+}
+
+nav a {
+    margin: 0 1rem;
+    text-decoration: none;
+    color: #000;
+}
+
+.btn {
+    padding: 0.5rem 1rem;
+    border: none;
+    background-color: #504B38;
+    color: white;
+    border-radius: 5px;
+    margin-left: 0.5rem;
+    cursor: pointer;
+}
+
+.collections {
+    padding: 2rem;
+}
+
+.collections h2 {
+    margin-bottom: 1rem;
+    border-bottom: 2px solid #C7B787;
+    display: inline-block;
+}
+
+.cards {
+    display: flex;
+    gap: 1rem;
+    justify-content: center;
+    align-items: center;
+}
+
+.card {
+    background-color: #FDF6DD;
+    padding: 1rem;
+    border-radius: 10px;
+    width: 180px;
+    height: 220px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.card img {
+    width: 100%;
+    height: 120px;
+    object-fit: cover;
+}
+
+.card .label {
+    font-weight: bold;
+    margin-top: 1rem;
+}
+
+.card button {
+    margin-top: 0.5rem;
+    background-color: #D4AF37;
+    color: white;
+    border: none;
+    padding: 0.4rem 0.8rem;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+.search-section {
+    background-color: #FAF5E4; /* Changed from white to beige */
+    text-align: center;
+    margin-bottom: 80px;
+    margin-top:60px;
+}
+
+.search-section h2 {
+    margin-bottom: 1rem;
+}
+
+.search-bar {
+    padding: 0.5rem;
+    width: 300px;
+    font-size: 1rem;
+}
+
+.search-btn {
+    background-color: #D4AF37;
+    padding: 0.6rem 1rem;
+    border: none;
+    cursor: pointer;
+}
+
+.footer {
+    background-color: #C7B787;
+    display: flex;
+    justify-content: space-between;
+    padding: 0.8rem 2rem; /* Reduced height */
+    font-size: 0.9rem;
+    height:  100px;
+}
+
+.footer .social {
+    display: flex;
+    flex-direction: column;
+}
+
+.footer .social a {
+    display: block;
+    padding: 1px;
+    font-size: 20px;
+    color: black;
+    text-decoration: none;
+}
+
+
+
+.footer div {
+    font-size: 0.8rem;
+}
+
+.footer div p {
+    margin-bottom: 0.5rem;
+    text-align: center;
+}
+
+.section-title {
+    font-size: 1.8rem;
+    margin-bottom: 1.5rem;
+    padding-bottom: 0.5rem;
+    border-bottom: 2px solid #C7B787;
+    display: inline-block;
+}
+
+.book-carousel {
+    display: flex;
+    gap: 25px;
+    overflow-x: auto;
+    padding: 20px 10px;
+    scrollbar-width: thin;
+    align-items: center;
+    justify-content: center;
+}
+
+.book-card {
+    width: 200px;
+    position: relative;
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s;
+    background-color: #FDF6DD;
+}
+
+.book-card:hover {
+    transform: translateY(-5px);
+}
+
+.book-card img {
+    width: 100%;
+    height: 300px;
+    object-fit: cover;
+    display: block;
+}
+
+.book-overlay {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background: rgba(60, 51, 39, 0.9);
+    color: white;
+    padding: 1rem;
+    transform: translateY(100%);
+    transition: transform 0.3s;
+}
+
+.book-card:hover .book-overlay {
+    transform: translateY(0);
+}
+
+.book-overlay h3 {
+    margin-bottom: 0.5rem;
+    font-size: 1.1rem;
+}
+
+.book-overlay button {
+    background: #D4AF37;
+    color: #3E3E3E;
+    border: none;
+    padding: 0.5rem 1rem;
+    border-radius: 4px;
+    font-weight: bold;
+    cursor: pointer;
+}
+main > h2{
+    margin: 50px 0px ;
+}
+#middle{
+    display: flex;
+    align-items: end;
+}
