@@ -5,24 +5,49 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Biblioteca</title>
-    <link rel="stylesheet" href="css/index.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.5/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-SgOJa3DmI69IUzQ2PVdRZhwQ+dy64/BUtbMJw1MZ8t5HZApcHrRKUc4W0kG879m7" crossorigin="anonymous">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+    <link rel="stylesheet" href="css/index.css">
+
 </head>
 <body>
+<header class="navbar navbar-expand-lg navbar-light">
+    <div class="container-fluid d-flex justify-content-around align-items-center ">
 
-<header>
-    <div class="logo">
-        <img src="images/logo.png" alt="no pic"/>
-        <p>Biblioteca</p>
+        <!-- Logo -->
+        <div class="logo d-flex align-items-center">
+            <img class="navbar-brand" src="images/logo.png" alt="no pic" />
+            <p class="mb-0 ms-2">Biblioteca</p>
+        </div>
+
+        <!-- Links + Buttons Container -->
+        <div class="d-flex align-items-center gap-4">
+            <!-- Navbar links -->
+            <ul class="navbar-nav d-flex flex-row gap-3 mb-0">
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Home</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Books</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Contact</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">About</a>
+                </li>
+            </ul>
+
+            <!-- Buttons -->
+            <div class="d-flex gap-2">
+                <button class="btn btn-dark">Sign up</button>
+                <button class="btn btn-dark">Sign in</button>
+            </div>
+        </div>
     </div>
-    <nav>
-        <a href="#">Books</a>
-        <a href="#">Contact</a>
-        <a href="#">About</a>
-        <button class="btn">Sign up</button>
-        <button class="btn">Sign in</button>
-    </nav>
 </header>
+
+
 
 <main>
     <h2>Your go-to place for knowledge, research, and discovery.</h2>
@@ -90,6 +115,7 @@
     </div>
 </footer>
 
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.5/dist/js/bootstrap.bundle.min.js" integrity="sha384-k6d4wzSIapyDyv1kpU366/PK5hCdSbCRGRCMv+eplOQJWyd1fbcAu9OCUj5zNLiq" crossorigin="anonymous"></script>
 
 </body>
 </html>
